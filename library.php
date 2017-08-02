@@ -1,7 +1,7 @@
 <?php
 
 function isEven($var){
-	if(($var % 2) == 0){
+	if(is_numeric($var) && ($var % 2 ) === 0){
 		return true;
 	}
 	return false;
@@ -48,7 +48,7 @@ function find($var,$case=false){
 		if(is_array($var)){
 			return $var[count($var)-1];
 		}
-	return substr($var,count($var)-1);
+	return substr($var,strlen($var)-1);
 	}
 	else{
 	return "Error! Find(Needs 2 variables)";
@@ -62,9 +62,8 @@ function reverse($var){
 		$var = str_split($var);
 	}
 	$var = array_reverse($var);
-	print_r($var);
 	if($i){
-		implode($var);
+		$var = implode($var);
 	}
 	return $var;
 }
@@ -76,21 +75,8 @@ function random($why){
 	return $why[rand(0,(count($why)-1))];
 }
 
-$a = 'Be Impressed Peasant';
-$b = ['Be','Impressed','Peasant'];
-
-var_dump(isEven(1));
-var_dump(isEven(2));
-
-var_dump(isVowel('g'));
-var_dump(isVowel('a'));
-
-var_dump(find($a,'first'));
-var_dump(find($b,'last'));
-var_dump(find($a,2));
-
-var_dump(reverse($a));
-var_dump(reverse($b));
-
-var_dump(random($a));
-var_dump(random($b));
+function write($filename,$messege){
+    $handle = fopen($filename, 'a');
+    fwrite($handle, $messege);
+    fclose($handle);
+}

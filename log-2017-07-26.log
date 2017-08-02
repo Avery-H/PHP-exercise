@@ -1,0 +1,12 @@
+2017-07-26 21:12:16 [$logLevel] $message2017-07-26 21:12:16 [$logLevel] $message 2017-07-26 21:13:01 [$logLevel] $message
+ 2017-07-26 21:13:01 [$logLevel] $message
+ 2017-07-26 21:13:06 [$logLevel] $message
+ 2017-07-26 21:13:06 [$logLevel] $message
+ 2017-07-26 21:14:37INFO This is an info message.
+ 2017-07-26 21:14:37ERROR This is an info message.
+ 2017-07-26 21:14:51 INFO This is an info message.
+ 2017-07-26 21:14:51 ERROR This is an info message.
+ 2017-07-26 21:24:31 INFO This is an info message.
+ 2017-07-26 21:24:31 ERROR This is an Error message.
+ 2017-07-26 21:24:32 INFO This is an info message.
+ 2017-07-26 21:24:32 ERROR This is an Error message.
